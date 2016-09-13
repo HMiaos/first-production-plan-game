@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8">
+<meta name="google" value="notranslate">
+<meta name="robots" content="noindex">
+<title>雷电</title>
+<link rel="stylesheet" href="CSS/index.css" />
+<style type="text/css">
+/*LOGO 边框颜色动画样式*/
+	@-webkit-keyframes redPulse {
+		from { border-color: #bc330d; -webkit-box-shadow: 0 0 9px #333; }
+		50% { border-color: #e33100; -webkit-box-shadow: 0 0 18px #e33100; }
+		to { border-color: #bc330d; -webkit-box-shadow: 0 0 9px #333; }
+	}
+	@-webkit-keyframes orangellowPulse {
+		from { border-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+		50% { border-color: #ffb515; -webkit-box-shadow: 0 0 18px #ffb515; }
+		to { border-color: #fc9200; -webkit-box-shadow: 0 0 9px #333; }
+	}
+	@-webkit-keyframes greenPulse {
+		from { border-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+		50% { border-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+		to { border-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+	}
+	@-webkit-keyframes bluePulse {
+		from { border-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+		50% { border-color: #2daebf; -webkit-box-shadow: 0 0 18px #2daebf; }
+		to { border-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+	}
+		
+	@-webkit-keyframes purplePulse {
+		from { border-color: #84029b; -webkit-box-shadow: 0 0 9px #333; }
+		50% { border-color: #ab08ef; -webkit-box-shadow: 0 0 18px #ab08ef; }
+		to { border-color: #84029b; -webkit-box-shadow: 0 0 9px #333; }
+	}
+
+		
+</style>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mTween.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/tween.js" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+	<!--顶端头部-->
+	<div id="top" class="clearFix">
+		<div id="topleft" class="fl">
+			<div id="logo" class="fl"></div>
+			<a href="javascript:;">
+				游戏
+				<b></b>
+				<div id="rests">
+					游戏1 <br />
+					游戏2 <br />
+					游戏3 <br />
+					跟多 <br />
+				</div>
+			</a>
+			<a href="shop.html">商城</a>
+		</div>
+		<div id="topright" class="fr">
+			<a href="serve.html">联系我们</a>
+			<a href="javascript:;">
+				您的游戏通行证
+				<b></b>
+			</a>
+			<div id="landing">
+				<a href="javascript:;">登陆</a>
+			</div>
+		</div>
+	</div>
+	<!--游戏首页盒模型-->
+	<div id="box" class="red">
+		<!--公告界面-->
+		<div id="notice">
+			<header>更新公告</header>
+			<p>亲爱的飞行员们：我们将于<span>8月22日23：00~8月23日9：00</span>期间进行停机更新维护。期间您将暂时无法登陆游戏。停机更新结束后，将开启全新的游戏体验！</p>
+			<p><span>8月22日-27日</span>更新并且登陆新版本即可领取奖励<span>200钻石+20000金币</span>更新奖励 ！</p>
+		</div>
+		<!--广告界面-->
+		<ul id="adver" class="purple">
+			<li><a href=""><img src="" alt="" /></a></li>
+			<li><a href=""><img src="" alt="" /></a></li>
+		</ul>
+		<!--logo图-->
+		<img src="img/index/logo.jpg"/>
+		<!--用户操作界面-->
+		<div id="play" class="game">
+			<a href="the first pass.html">开始游戏</a>
+		</div>
+		<div id="set" class="game">
+			<a href="javascript:;">游戏设置</a>
+		</div>
+		<!--设置界面-->
+		<div id="shezhi">
+			<p><a href="javascript:;" id="none">×</a></p>
+			<p class="sz"><a href="avascript:;">-</a><i>游戏音量</i><a href="javascript:;">+</a></p>
+			<p class="sz"><a href="avascript:;">-</a><i>游戏亮度</i><a href="javascript:;">+</a></p>
+			<p class="sz"><a href="avascript:;">-</a><i>游戏难度</i><a href="javascript:;">+</a></p>
+		</div>
+		<!--用户登陆界面-->
+		<div id="login">
+			<div id="logintop">
+				<p class="fl">通行证登陆</p>
+				<i class="fr">X</i>
+			</div>
+			<div id="loginform">
+				<div id="loginhead">
+					<div id="loginphone" class="fr">
+						<i></i>
+						<a href="javascript:;">使用快捷登陆方式</a>
+					</div>
+				</div>
+				<form action="" method="post" name="hm">
+					<p id="identp">
+						<input type="text" placeholder="请输入您的账号" id="ident" class="shuru"/>
+						<a href="javascript:;">注册账号</a>
+					</p id="mimap">
+					<p>
+						<input type="password" name="" id="mima" value=""  class="shuru" placeholder="请输入您的密码"/>
+						<a href="javascript:;">找回密码</a>
+					</p>
+					<div id="checkbox" class="clearFix">
+						<div class="fl"><input type="checkbox" name="" id="" value="" />记住密码</div>
+						<div class="fl"><input type="checkbox" name="" id="" value="" />自动登录</div>
+					</div>
+					<p id="logina"><a href="javascript:;">登陆</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--背景界面-->
+	<canvas id="c">
+		
+	</canvas>
+	
+	<script type="text/javascript">
+	
+	//canvas 背景
+		var w = c.width = window.innerWidth,
+			h = c.height = window.innerHeight,
+			ctx = c.getContext('2d'),
+			opts = {
+				len: 20,
+				count: 50,
+				baseTime: 10,
+				addedTime: 10,
+				dieChance: .05,
+				spawnChance: 1,
+				sparkChance: .1,
+				sparkDist: 10,
+				sparkSize: 2,
+				color: 'hsl(hue,100%,light%)',
+				baseLight: 50,
+				addedLight: 10,
+				shadowToTimePropMult: 6,
+				baseLightInputMultiplier: .01,
+				addedLightInputMultiplier: .02,
+				cx: w / 2,
+				cy: h / 2,
+				repaintAlpha: .04,
+				hueChange: .1
+			},
+			tick = 0,
+			lines = [],
+			dieX = w / 2 / opts.len,
+			dieY = h / 2 / opts.len,
+			baseRad = Math.PI * 2 / 6;
+			ctx.fillStyle = 'black',
+			ctx.fillRect(0, 0, w, h),
+			/*box = document.getElementById('box'),*/
+			boxborder = ['orangellow','green','blue','purple','red'],
+			boxi=-1,
+			/*用jquery方法做了
+			playgame = document.getElementById('box').getElementsByTagName('a')[0],
+			setgame = document.getElementById('box').getElementsByTagName('a')[1],
+			shezhi = document.getElementById('shezhi'),
+			none = document.getElementById('none');*/
+			
+		//top	
+			//top 左边 '游戏' 标签
+			$('#topleft a').eq(0).on('mouseover',function(){
+				$('#rests').show();
+			})
+			$('#topleft a').eq(0).on('mouseleave',function(){
+				$('#rests').hide();
+			})
+			//Top 右边  '通行证'标签
+			
+			$('#topright a').eq(1).on('click',function(){
+				$('#landing').toggle();
+			})
+			//登陆界面
+			$('#landing a').eq(0).on('click',function(){
+				if(onoff){
+					$('#topright a').eq(1).html('您的游戏通行证');
+					$('#landing a').eq(0).html('登陆');
+					$('#landing').hide();
+					onoff = false;
+					return;
+				}
+				$('#login').toggle();
+			})
+			//登陆
+			var onoff = false;
+			$('#logina a').eq(0).on('click',function(){
+				$('#login').hide();
+				$('#landing').toggle();
+				//验证
+				/*验证懒得写了*/
+				console.log($('#identp input'))
+				if($('#identp input')[0].value !==''){
+					$('#topright a').eq(1).html('欢迎您，'+$('#identp input')[0].value);
+					$('#landing a').eq(0).html('退出我的账户');
+					onoff = true;
+				}
+			
+			})
+			//X关闭
+			$('#logintop i').eq(0).on('click',function(){
+				$('#login').hide();
+				$('#landing').hide();
+			})
+			
+		//设置LOGO边框的闪动。
+		setInterval(function(){
+			if(boxi == 4){
+				boxi = 0;
+			}else{
+				boxi++;
+			}
+			$('#box')[0].className = boxborder[boxi];
+		},7000);
+		
+		
+		//设置.game内容
+		$('#play a').on('click',function(){
+			alert('游戏开始');
+		})
+		$('#set a').on('click',function(){
+			$('#shezhi').show();
+		})
+		$('#none').on('click',function(){
+			$('#shezhi').hide();
+		})
+		
+		//设置广告（adver）轮播图
+		//边框
+		var adver1 = 0;
+		setInterval(function(){
+			if(adver1 == 4){
+				adver1 = 0;
+			}else{
+				adver1++;
+			}
+			$('#adver')[0].className = boxborder[adver1];
+		},5000);
+		
+		
+		//轮播图
+		var adnum = 1
+		for(var i=0;i<$('#adver li').length;i++){
+				$('#adver li')[i].style.left = i*250+'px'
+				$('#adver li img')[i].src = 'img/index/ad'+adnum+'.jpg'
+		}
+
+		timer = setInterval(function(){
+			if(adnum ==4){
+				adnum = 1;
+			}else{
+				adnum++;
+			}
+			//先归位
+			$('#adver li')[1].style.left = 250+'px';
+			$('#adver li img')[1].src = 'img/index/ad'+adnum+'.jpg';
+			mTween($('#adver li')[1],'left',0,300,'linear',function(){
+					$('#adver li img')[0].src = 'img/index/ad'+adnum+'.jpg';
+				})
+		},3000)
+		
+		//移入
+		$('#adver').on('mouseover',function(){
+			clearInterval(timer);
+		}).on('mouseleave',function(){
+			timer = setInterval(function(){
+				if(adnum ==4){
+					adnum = 1;
+				}else{
+					adnum++;
+				}
+				//先归位
+				$('#adver li')[1].style.left = 250+'px';
+				$('#adver li img')[1].src = 'img/index/ad'+adnum+'.jpg';
+				mTween($('#adver li')[1],'left',0,300,'linear',function(){
+						$('#adver li img')[0].src = 'img/index/ad'+adnum+'.jpg';
+					})
+			},3000)
+		})
+		
+	/*	playgame.onclick = function(){
+			alert('为保证游戏界面流畅，请在您的浏览器最大化后刷新开始游戏')
+		//将新窗口最大化（做不出来）
+//			if(!confirm('开始游戏会将窗口最大化，是否确认开始？')){
+//				return;
+//			}
+//			function openMaxwindow(){
+//				window.open('the first pass.html','','width =1280px,height=960px,top=0px,left=0px')
+//			}
+//			openMaxwindow()
+		}*/
+		/*setgame.onclick = function(){
+			shezhi.style.display = 'block';
+		}*/
+		/*none.onclick = function(){
+			shezhi.style.display = '';
+		}*/
+		//游戏设置（音量，亮度，难度等）
+		
+		
+		
+		
+		
+		
+		//流动框背景
+		function loop() {
+			window.requestAnimationFrame(loop); ++tick;
+			ctx.globalCompositeOperation = 'source-over';
+			ctx.shadowBlur = 0;
+			ctx.fillStyle = 'rgba(0,0,0,alp)'.replace('alp', opts.repaintAlpha);
+			ctx.fillRect(0, 0, w, h);
+			ctx.globalCompositeOperation = 'lighter';
+			if (lines.length < opts.count && Math.random() < opts.spawnChance) lines.push(new Line);
+			lines.map(function(line) {
+				line.step()
+			})
+		}
+		function Line() {
+			this.reset()
+		}
+		Line.prototype.reset = function() {
+			this.x = 0;
+			this.y = 0;
+			this.addedX = 0;
+			this.addedY = 0;
+			this.rad = 0;
+			this.lightInputMultiplier = opts.baseLightInputMultiplier + opts.addedLightInputMultiplier * Math.random();
+			this.color = opts.color.replace('hue', tick * opts.hueChange);
+			this.cumulativeTime = 0;
+			this.beginPhase()
+		}
+		Line.prototype.beginPhase = function() {
+			this.x += this.addedX;
+			this.y += this.addedY;
+			this.time = 0;
+			this.targetTime = (opts.baseTime + opts.addedTime * Math.random()) | 0;
+			this.rad += baseRad * (Math.random() < .5 ? 1 : -1);
+			this.addedX = Math.cos(this.rad);
+			this.addedY = Math.sin(this.rad);
+			if (Math.random() < opts.dieChance || this.x > dieX || this.x < -dieX || this.y > dieY || this.y < -dieY) this.reset()
+		}
+		Line.prototype.step = function() {++this.time; ++this.cumulativeTime;
+			if (this.time >= this.targetTime) this.beginPhase();
+			var prop = this.time / this.targetTime,
+			wave = Math.sin(prop * Math.PI / 2),
+			x = this.addedX * wave,
+			y = this.addedY * wave;
+			ctx.shadowBlur = prop * opts.shadowToTimePropMult;
+			ctx.fillStyle = ctx.shadowColor = this.color.replace('light', opts.baseLight + opts.addedLight * Math.sin(this.cumulativeTime * this.lightInputMultiplier));
+			ctx.fillRect(opts.cx + (this.x + x) * opts.len, opts.cy + (this.y + y) * opts.len, 2, 2);
+			if (Math.random() < opts.sparkChance) ctx.fillRect(opts.cx + (this.x + x) * opts.len + Math.random() * opts.sparkDist * (Math.random() < .5 ? 1 : -1) - opts.sparkSize / 2, opts.cy + (this.y + y) * opts.len + Math.random() * opts.sparkDist * (Math.random() < .5 ? 1 : -1) - opts.sparkSize / 2, opts.sparkSize, opts.sparkSize)
+		}
+		loop();
+		window.addEventListener('resize',function() {
+			w = c.width = window.innerWidth;
+			h = c.height = window.innerHeight;
+			ctx.fillStyle = 'black';
+			ctx.fillRect(0, 0, w, h);
+			opts.cx = w / 2;
+			opts.cy = h / 2;
+			dieX = w / 2 / opts.len;
+			dieY = h / 2 / opts.len
+		});
+	</script>
+</body>
+</html>
